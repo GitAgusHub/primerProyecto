@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti en San Valentín</title>
+    <link rel="stylesheet"type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Feliz 14 de Febrero, mi amor 💖</h1>
+        <p>¿Quieres leer la carta?</p>
+        <div class="botones">
+            <button id="btnSi">Sí 💕</button>
+            <button id="btnNo">No 💔</button>
+        </div>
+    </div>
+    
+    <div class="carta" id="carta">
+        <img src="img/Imagen de WhatsApp 2025-02-14 a las 11.06.22_ddcae0f1.jpg" class="img-esquina img-esquina-izq">
+        <img src="img/IMG-20250214-WA0014.jpg" class="img-esquina img-esquina-der">
+        <h1>Para mi Amor    💖</h1>
+        <p>
+            En este día especial, quiero recordarte lo increíble que sos y lo mucho que significas para mí. 
+            Me pone re feliz que haya llegado a este día con vos, sos mi persona especial, mi razón para sonreír cada día. 
+            No hay palabras suficientes para expresar cuánto te amo, pero espero que esta pequeña carta logre transmitirte al menos una parte de mis sentimientos. 💕    
+            La primera vez que te dedique una cancion, me senti raro, nunca lo hice, pero elegí el tema que es perfecto para vos, cada vez que la escucho, pienso en vos.
+            <button onclick="window.location.href='https://open.spotify.com/intl-es/track/4om2gLDSF7vv9DBl8p1qhn';">Perfecta</button>
+        </p>
+        <p>Feliz San Valentín, mi amor. 💘</p>
+        <div class="firma">TE AMA MUCHO, TU NOVIO Agus</div>
+
+    </div>
+
+
+    <script>
+        document.getElementById("btnSi").addEventListener("click", function() {
+            document.querySelector(".contenedor").style.display = "none";
+            let carta = document.getElementById("carta");
+            carta.style.display = "block";
+            setTimeout(() => {
+                carta.classList.add("mostrar");
+            }, 10);
+        });
+        document.getElementById("btnNo").addEventListener("click", function() {
+            alert("FA LOCA, ASI SOS E, TODO MAL 💔");
+        });
+    </script>
+</body>
+</html>
